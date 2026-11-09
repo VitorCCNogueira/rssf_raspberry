@@ -31,7 +31,7 @@ import sync
 from config import DB_CONFIG
 from core.lotes import MAX_IDADE_SYNC_MIN, LoteInvalido, preparar_lote
 
-SCHEMA = Path(__file__).resolve().parents[1] / "database" / "schema.sql"
+SCHEMA = Path(__file__).resolve().parent / "database" / "schema.sql"
 FMT = "%Y-%m-%d %H:%M:%S"
 INICIO = datetime(2026, 11, 8, 12, 0, 0, tzinfo=timezone.utc)
 LIMITE_IDADE_MIN = MAX_IDADE_SYNC_MIN  # importado: o teste segue o teto real, não uma cópia dele
