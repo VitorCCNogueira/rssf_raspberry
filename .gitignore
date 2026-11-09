@@ -1,0 +1,11 @@
+.env
+backend/.env
+
+.venv/
+__pycache__/
+*.py[cod]
+
+# SQLite local do Pi (WAL cria arquivos extras ao lado do .db)
+*.db
+*.db-wal
+*.db-shm
